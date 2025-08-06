@@ -287,6 +287,7 @@ where
             }
 
             Msg::NewEvent(Event::Listening(addr)) => {
+                info!("Network handle: NewEvent Listening!!!");
                 output_port.send(NetworkEvent::Listening(addr));
             }
 
